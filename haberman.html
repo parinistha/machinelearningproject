@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+Haberman - Dataset
+
+    - DataHub - Frictionless Data
+  </title>
+  <meta name="author" content="Datopian">
+  <meta name="keywords" content="data,open data,datasets,public data,data package,reference data,csv,json,excel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@datahubio" />
+  <meta name="twitter:title" content="Haberman" />
+  <meta name="twitter:image" content="https://datahub.io/static/img/logo-cube.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Haberman" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DataHub" />
+  <meta property="og:image" content="https://datahub.io/static/img/logo-cube.png" />
+  <meta property="og:image:alt" content="DataHub" />
+  <meta property="fb:app_id" content="188583668435715" />
+
+  
+  <meta name="description" content="The resources for this dataset can be found at https://www.openml.org/d/43
+
+Author:   
+Source: Unkno" />
+  <meta name="twitter:description" content="The resources for this dataset can be found at https://www.openml.org/d/43
+
+Author:   
+Source: Unkno" />
+  <meta property="og:description" content="The resources for this dataset can be found at https://www.openml.org/d/43
+
+Author:   
+Source: Unkno" />
+  
+
+
+  <link rel="icon" type="img/ico" href="/static/img/favicon.ico" sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WCTXGJ8');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Minimize page flickering -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',1000,
+  {'GTM-WCTXGJ8':true});</script>
+  <!-- End Minimize page flickering -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80458846-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-80458846-4');
+  </script>
+
+  <!--  Google Analytics - End -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" media="screen" href="/static/stylesheets/app.css">
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="showcase">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCTXGJ8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <div class="banner" style="margin-bottom:0; font-size: 14px;">
+      <div>
+        DataHub.io by <a href="https://datopian.com/"><img src="https://www.datopian.com/img/datopian-logo.png" style="height: 24px; padding-bottom: 4px; padding-left: 3px; padding-right: 3px;" /></a> &mdash;
+        We build solutions that unleash the potential of data <i class="fas fa-rocket" aria-hidden="true"></i> Let's start with yours! <a href="https://datopian.com/contact/" style="font-weight: 600; text-decoration:underline;">Get in touch now &raquo;</a>
+      </div>
+    </div>
+    <!-- Page header -->
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="inner_container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="main-logo pull-left" href="/">
+              <img class="img-responsive" src="/static/img/datahub-cube-edited.svg">
+            </a>
+          </div>
+          <!--
+          <div class="nav navbar-nav searchbox">
+            <form class="form-inline" action="/search" method="GET">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Find data" name="q">
+              </div>
+            </form>
+          </div>
+          -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/docs/about">About</a>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/search" class="find-data join-link">Find data</a>
+              </li>
+              <li>
+                <a href="/collections">Collections</a>
+              </li>
+              <li>
+                <a href="/docs">Docs</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/download">Tools</a>
+              </li>
+              <li>
+                <a href="https://gitter.im/datahubio/chat" class="chat" target="_blank">Chat</a>
+              </li>
+  						<!--
+              <li>
+                <a href="/">DISCOVER</a>
+              </li>
+  						-->
+              
+                <li>
+                  <a href="/login">Login</a>
+                </li>
+                <li>
+                  <a href="/login" class="join-link">Join free</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- End of page header -->
+
+    
+
+    
+<!-- Load goodtables-ui so we can use it in the body of this page. -->
+<script src="https://unpkg.com/goodtables-ui@1.1.3/dist/goodtables-ui.min.js"></script>
+
+<!-- Premium data offer -->
+
+<div class="container">
+  <div class="inner_container">
+
+
+    <!-- Modal -->
+    <div class="modal-new modal fade" id="premium-data" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel"><img src="/static/img/text-msg.png" class="title-img"/> Premium data offer</h3>
+          </div>
+          <div class="modal-body">
+            <iframe src="/premium-data" width="100%" height="550px" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Bottom Area to show the alert -->
+    <div class="stripe-ribbon" id="showcase-offer">
+      <p>Now you can request additional data and/or customized columns! </p>
+      <a href="#premium-data" data-toggle="modal" data-target="#premium-data" class="premium-data-link" onclick="dataLayer.push({'premium-data-link': 'sticky-btm-bar'})">Try It Now!</a>
+    </div>
+
+<!-- End of Premium data offer -->
+
+<!-- title and owner info -->
+<div class="container">
+  <div class="inner_container">
+    
+
+    
+    
+
+    <!-- Show notice if any of reports is invalid -->
+    
+    <div class="alert alert-danger status" role="alert">
+      <h3 class="error-log-heading">Some of your data has validation errors:</h3>
+      
+      
+      
+      
+      <p>
+        - <a href="#report-1">haberman</a>: 17 error(s) found.
+      </p>
+      
+      
+      
+      
+    </div>
+    
+
+    <div class="showcase-page-header">
+      <h1>
+        Haberman
+        
+
+        
+      </h1>
+
+      
+      <p class="clearfix"></p>
+
+      <p class="publisher">
+        <img src="https://www.gravatar.com/avatar/machine-learning?d=https%3A%2F%2Ftesting.datahub.io%2Fstatic%2Fimg%2Flogo-cube03.png" class="img-responsive img-circle avatar" />
+        <a href="/machine-learning">machine-learning</a>
+      </p>
+    </div>
+  </div>
+</div><!-- end of title and owner info -->
+
+<div class="container-no-top-padding">
+  <div class="inner_container">
+    <div class="dataset show">
+      <!-- info about data package -->
+      <div>
+        <table class="table info no-left-padding">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th>Size</th>
+              <th>Format</th>
+              <th>Created</th>
+              <th>Updated</th>
+              <th>License</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-xs-1">3</td>
+              <td class="col-xs-1">48kB</td>
+              <td class="col-xs-2 format-list">
+                
+                  arff
+                
+                  csv
+                
+                  zip
+                
+              </td>
+              <td class="col-xs-2">1 year ago</td>
+              <td class="col-xs-2">1 year ago</td>
+              <td class="col-xs-2">
+                
+                  <i class="fas fa-gavel"></i> 
+    
+    <a href="http://opendatacommons.org/licenses/pddl/" title="Uses data from 'Open Data Commons Public Domain Dedication and License'" target="_blank">
+      Open Data Commons Public Domain Dedication and License
+    </a>
+    
+  
+                
+              </td>
+              <td class="col-xs-2">
+                
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- short readme -->
+      
+        <div class="readme-snippet readable-width">The resources for this dataset can be found at https://www.openml.org/d/43
+
+Author:
+Source: Unknown -
+Please cite:
+
+Title: Haberman&#39;s Survival Data
+
+ Sources:
+    (a) Donor:   Tjen-Sien Lim (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="573b3e3a23172423362379203e243479323322">[email&#160;protected]</a>)
+    (b) Date:    March 4, 1999
+
+ Past Usage:
+    Haberman, S. J. (1976). Generalized <a href="#readme" onclick="scrollDown(this)">read more</a></div>
+      
+
+      <!-- download button -->
+      <a href="#data" class="btn btn-lg btn-primary" onclick="scrollDown(this)">Download</a>
+      <!-- developers button -->
+      <a href="#data-cli" class="btn btn-lg btn-default" onclick="scrollDown(this)">Developers</a>
+
+      <!-- views -->
+      <div class="react-me part" data-type="data-views" id="next-section"></div>
+
+      <!-- data files (downloads) table -->
+      <h2 class="section-title" id="data">Data Files</h2>
+      <p>Download files in this dataset</p>
+      <div class="resource-listing part">
+        <table class="table table-condensed table-striped resource-listing">
+          <thead>
+            <th class="col-xs-2">File</th>
+            <th class="col-xs-4">Description</th>
+            <th class="col-xs-1">Size</th>
+            <th class="col-xs-2">Last changed</th>
+            <th class="col-xs-4">Download</th>
+          </thead>
+          <tbody>
+          
+            <tr>
+              <td class="col-xs-2">
+                <i class="far fa-file-alt"></i> <a href="#resource-haberman_arff" onclick="scrollDown(this)" class="anchor-link" title="haberman_arff">haberman_arff</a>
+              </td>
+              <td class="col-xs-4" title="">
+                
+              </td>
+              <td class="col-xs-1" title="5kB">
+                5kB
+              </td>
+              <td class="col-xs-1" title="">
+                
+              </td>
+              <td class="download truncate col-xs-4">
+                <a href="/machine-learning/haberman/r/haberman_arff.arff">
+                  arff (5kB)
+                </a>
+                
+              </td>
+            </tr>
+          
+            <tr>
+              <td class="col-xs-2">
+                <i class="far fa-file-alt"></i> <a href="#resource-haberman" onclick="scrollDown(this)" class="anchor-link" title="haberman">haberman</a>
+              </td>
+              <td class="col-xs-4" title="">
+                
+              </td>
+              <td class="col-xs-1" title="3kB">
+                3kB
+              </td>
+              <td class="col-xs-1" title="">
+                
+              </td>
+              <td class="download truncate col-xs-4">
+                <a href="/machine-learning/haberman/r/haberman.csv">
+                  csv (3kB)
+                </a>
+                
+                ,
+                <a href="/machine-learning/haberman/r/haberman.json">
+                  json (47kB)
+                </a>
+                
+              </td>
+            </tr>
+          
+            <tr>
+              <td class="col-xs-2">
+                <i class="far fa-file-alt"></i> <a href="#resource-haberman_zip" onclick="scrollDown(this)" class="anchor-link" title="haberman_zip">haberman_zip</a>
+              </td>
+              <td class="col-xs-4" title="Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.">
+                Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.
+              </td>
+              <td class="col-xs-1" title="9kB">
+                9kB
+              </td>
+              <td class="col-xs-1" title="">
+                
+              </td>
+              <td class="download truncate col-xs-4">
+                <a href="/machine-learning/haberman/r/haberman_zip.zip">
+                  zip (9kB)
+                </a>
+                
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+
+      <!-- preview + field information -->
+      
+      
+      <div class="resource-info part">
+        <!-- Heading for each resource -->
+        <h2 id="resource-haberman_arff" class="section-title">
+          
+          haberman_arff
+          
+          &nbsp;
+          <a href="/machine-learning/haberman/r/haberman_arff.arff">
+            <i class="far fa-arrow-alt-circle-down" aria-hidden="true" style="font-size:0.9em"></i>
+          </a>
+        </h2>
+        <!-- Render validation reports for each resource: -->
+        <div id="report-0"></div>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          if ('') {
+            var report = JSON.parse(``);
+            report = JSON.parse(report);
+            var element = document.getElementById('report-0');
+            goodtablesUI.render(goodtablesUI.Report, {report}, element);
+          }
+          // Hide message about "goodtable.yml"
+          var errorDetailsLinks = document.getElementsByClassName('error-details-link');
+          for (var i=0; i<errorDetailsLinks.length; i++) {
+            errorDetailsLinks[i].onclick = function () {
+              setTimeout(function () {
+                var liTags = document.getElementsByTagName('li');
+                for (var i=0; i<liTags.length; i++) {
+                  if (liTags[i].textContent.includes('check in goodtables.yml')) {
+                    liTags[i].style.display = 'none';
+                  }
+                }
+              }, 10)
+            }
+          }
+        </script>
+        <!-- End of reports rendering -->
+
+        <!-- Premium Data Offer Link -->
+        
+        <div class="data-offer-txt">
+            <img src="/static/img/cube.png" />
+            <p> Signup to Premium Service for additional or customised data - <a href="#premium-data-2" data-toggle="modal" data-target="#premium-data" class="premium-data-link" onclick="dataLayer.push({'premium-data-link': 'inline-msg'})">Get Started</a></p>
+        </div>
+        
+
+        <!-- Placeholder div elements for React components: preview tables -->
+        <div id="resource-0" class="react-me tables"
+             data-type="resource-preview" data-resource="0"></div>
+        <!-- End of div elements for React -->
+        <p class="notice">
+          This is a preview version. There might be more data in <a href="/machine-learning/haberman/r/haberman_arff.arff">the original version.</a>
+        </p>
+        
+      </div>
+      
+      
+      
+      <div class="resource-info part">
+        <!-- Heading for each resource -->
+        <h2 id="resource-haberman" class="section-title">
+          
+          haberman
+          
+          &nbsp;
+          <a href="/machine-learning/haberman/r/haberman.csv">
+            <i class="far fa-arrow-alt-circle-down" aria-hidden="true" style="font-size:0.9em"></i>
+          </a>
+        </h2>
+        <!-- Render validation reports for each resource: -->
+        <div id="report-1"></div>
+
+        <script>
+          if ('{\&quot;time\&quot;:1.043,\&quot;valid\&quot;:false,\&quot;error-count\&quot;:17,\&quot;table-count\&quot;:1,\&quot;tables\&quot;:[{\&quot;time\&quot;:0.954,\&quot;valid\&quot;:false,\&quot;error-count\&quot;:17,\&quot;row-count\&quot;:307,\&quot;source\&quot;:\&quot;https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv\&quot;,\&quot;headers\&quot;:[\&quot;Age_of_patient_at_time_of_operation\&quot;,\&quot;Patients_year_of_operation\&quot;,\&quot;Number_of_positive_axillary_nodes_detected\&quot;,\&quot;Survival_status\&quot;],\&quot;scheme\&quot;:\&quot;https\&quot;,\&quot;format\&quot;:\&quot;csv\&quot;,\&quot;encoding\&quot;:\&quot;iso8859-1\&quot;,\&quot;schema\&quot;:\&quot;table-schema\&quot;,\&quot;errors\&quot;:[{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 25 is duplicated to row(s) 21\&quot;,\&quot;row-number\&quot;:25,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;37\&quot;,\&quot;63\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 29 is duplicated to row(s) 28\&quot;,\&quot;row-number\&quot;:29,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;38\&quot;,\&quot;60\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 54 is duplicated to row(s) 53\&quot;,\&quot;row-number\&quot;:54,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;41\&quot;,\&quot;65\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 67 is duplicated to row(s) 66\&quot;,\&quot;row-number\&quot;:67,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;43\&quot;,\&quot;64\&quot;,\&quot;0\&quot;,\&quot;2\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 80 is duplicated to row(s) 78\&quot;,\&quot;row-number\&quot;:80,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;44\&quot;,\&quot;61\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 110 is duplicated to row(s) 109\&quot;,\&quot;row-number\&quot;:110,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;48\&quot;,\&quot;58\&quot;,\&quot;11\&quot;,\&quot;2\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 134 is duplicated to row(s) 130\&quot;,\&quot;row-number\&quot;:134,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;50\&quot;,\&quot;61\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 181 is duplicated to row(s) 177\&quot;,\&quot;row-number\&quot;:181,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;54\&quot;,\&quot;62\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 186 is duplicated to row(s) 184\&quot;,\&quot;row-number\&quot;:186,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;55\&quot;,\&quot;58\&quot;,\&quot;1\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 198 is duplicated to row(s) 194\&quot;,\&quot;row-number\&quot;:198,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;56\&quot;,\&quot;60\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 208 is duplicated to row(s) 207\&quot;,\&quot;row-number\&quot;:208,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;57\&quot;,\&quot;64\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 235 is duplicated to row(s) 234\&quot;,\&quot;row-number\&quot;:235,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;61\&quot;,\&quot;59\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 239 is duplicated to row(s) 234, 235\&quot;,\&quot;row-number\&quot;:239,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;61\&quot;,\&quot;59\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 245 is duplicated to row(s) 244\&quot;,\&quot;row-number\&quot;:245,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;62\&quot;,\&quot;66\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 251 is duplicated to row(s) 250\&quot;,\&quot;row-number\&quot;:251,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;63\&quot;,\&quot;63\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 268 is duplicated to row(s) 265\&quot;,\&quot;row-number\&quot;:268,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;65\&quot;,\&quot;64\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]},{\&quot;code\&quot;:\&quot;duplicate-row\&quot;,\&quot;message\&quot;:\&quot;Row 278 is duplicated to row(s) 277\&quot;,\&quot;row-number\&quot;:278,\&quot;column-number\&quot;:null,\&quot;row\&quot;:[\&quot;67\&quot;,\&quot;66\&quot;,\&quot;0\&quot;,\&quot;1\&quot;]}]}],\&quot;warnings\&quot;:[],\&quot;preset\&quot;:\&quot;table\&quot;,\&quot;resource\&quot;:\&quot;haberman\&quot;}') {
+            var report = JSON.parse(`"{\\\"time\\\":1.043,\\\"valid\\\":false,\\\"error-count\\\":17,\\\"table-count\\\":1,\\\"tables\\\":[{\\\"time\\\":0.954,\\\"valid\\\":false,\\\"error-count\\\":17,\\\"row-count\\\":307,\\\"source\\\":\\\"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv\\\",\\\"headers\\\":[\\\"Age_of_patient_at_time_of_operation\\\",\\\"Patients_year_of_operation\\\",\\\"Number_of_positive_axillary_nodes_detected\\\",\\\"Survival_status\\\"],\\\"scheme\\\":\\\"https\\\",\\\"format\\\":\\\"csv\\\",\\\"encoding\\\":\\\"iso8859-1\\\",\\\"schema\\\":\\\"table-schema\\\",\\\"errors\\\":[{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 25 is duplicated to row(s) 21\\\",\\\"row-number\\\":25,\\\"column-number\\\":null,\\\"row\\\":[\\\"37\\\",\\\"63\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 29 is duplicated to row(s) 28\\\",\\\"row-number\\\":29,\\\"column-number\\\":null,\\\"row\\\":[\\\"38\\\",\\\"60\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 54 is duplicated to row(s) 53\\\",\\\"row-number\\\":54,\\\"column-number\\\":null,\\\"row\\\":[\\\"41\\\",\\\"65\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 67 is duplicated to row(s) 66\\\",\\\"row-number\\\":67,\\\"column-number\\\":null,\\\"row\\\":[\\\"43\\\",\\\"64\\\",\\\"0\\\",\\\"2\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 80 is duplicated to row(s) 78\\\",\\\"row-number\\\":80,\\\"column-number\\\":null,\\\"row\\\":[\\\"44\\\",\\\"61\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 110 is duplicated to row(s) 109\\\",\\\"row-number\\\":110,\\\"column-number\\\":null,\\\"row\\\":[\\\"48\\\",\\\"58\\\",\\\"11\\\",\\\"2\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 134 is duplicated to row(s) 130\\\",\\\"row-number\\\":134,\\\"column-number\\\":null,\\\"row\\\":[\\\"50\\\",\\\"61\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 181 is duplicated to row(s) 177\\\",\\\"row-number\\\":181,\\\"column-number\\\":null,\\\"row\\\":[\\\"54\\\",\\\"62\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 186 is duplicated to row(s) 184\\\",\\\"row-number\\\":186,\\\"column-number\\\":null,\\\"row\\\":[\\\"55\\\",\\\"58\\\",\\\"1\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 198 is duplicated to row(s) 194\\\",\\\"row-number\\\":198,\\\"column-number\\\":null,\\\"row\\\":[\\\"56\\\",\\\"60\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 208 is duplicated to row(s) 207\\\",\\\"row-number\\\":208,\\\"column-number\\\":null,\\\"row\\\":[\\\"57\\\",\\\"64\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 235 is duplicated to row(s) 234\\\",\\\"row-number\\\":235,\\\"column-number\\\":null,\\\"row\\\":[\\\"61\\\",\\\"59\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 239 is duplicated to row(s) 234, 235\\\",\\\"row-number\\\":239,\\\"column-number\\\":null,\\\"row\\\":[\\\"61\\\",\\\"59\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 245 is duplicated to row(s) 244\\\",\\\"row-number\\\":245,\\\"column-number\\\":null,\\\"row\\\":[\\\"62\\\",\\\"66\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 251 is duplicated to row(s) 250\\\",\\\"row-number\\\":251,\\\"column-number\\\":null,\\\"row\\\":[\\\"63\\\",\\\"63\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 268 is duplicated to row(s) 265\\\",\\\"row-number\\\":268,\\\"column-number\\\":null,\\\"row\\\":[\\\"65\\\",\\\"64\\\",\\\"0\\\",\\\"1\\\"]},{\\\"code\\\":\\\"duplicate-row\\\",\\\"message\\\":\\\"Row 278 is duplicated to row(s) 277\\\",\\\"row-number\\\":278,\\\"column-number\\\":null,\\\"row\\\":[\\\"67\\\",\\\"66\\\",\\\"0\\\",\\\"1\\\"]}]}],\\\"warnings\\\":[],\\\"preset\\\":\\\"table\\\",\\\"resource\\\":\\\"haberman\\\"}"`);
+            report = JSON.parse(report);
+            var element = document.getElementById('report-1');
+            goodtablesUI.render(goodtablesUI.Report, {report}, element);
+          }
+          // Hide message about "goodtable.yml"
+          var errorDetailsLinks = document.getElementsByClassName('error-details-link');
+          for (var i=0; i<errorDetailsLinks.length; i++) {
+            errorDetailsLinks[i].onclick = function () {
+              setTimeout(function () {
+                var liTags = document.getElementsByTagName('li');
+                for (var i=0; i<liTags.length; i++) {
+                  if (liTags[i].textContent.includes('check in goodtables.yml')) {
+                    liTags[i].style.display = 'none';
+                  }
+                }
+              }, 10)
+            }
+          }
+        </script>
+        <!-- End of reports rendering -->
+
+        <!-- Premium Data Offer Link -->
+        
+        <div class="data-offer-txt">
+            <img src="/static/img/cube.png" />
+            <p> Signup to Premium Service for additional or customised data - <a href="#premium-data-2" data-toggle="modal" data-target="#premium-data" class="premium-data-link" onclick="dataLayer.push({'premium-data-link': 'inline-msg'})">Get Started</a></p>
+        </div>
+        
+
+        <!-- Placeholder div elements for React components: preview tables -->
+        <div id="resource-1" class="react-me tables"
+             data-type="resource-preview" data-resource="1"></div>
+        <!-- End of div elements for React -->
+        <p class="notice">
+          This is a preview version. There might be more data in <a href="/machine-learning/haberman/r/haberman.csv">the original version.</a>
+        </p>
+        
+         <h3 class="section-title">Field information</h3>
+         <table class="table table-bordered table-striped resource-summary">
+           <thead>
+             <tr>
+               <th>Field Name</th>
+               <th>Order</th>
+               <th>Type (Format)</th>
+               <th>Description</th>
+             </tr>
+           </thead>
+           <tbody>
+             
+             <tr>
+               <th>Age_of_patient_at_time_of_operation</th>
+               <td>1</td>
+               <td class="type type-number">number (default) </td>
+               <td></td>
+             </tr>
+             
+             <tr>
+               <th>Patients_year_of_operation</th>
+               <td>2</td>
+               <td class="type type-number">number (default) </td>
+               <td></td>
+             </tr>
+             
+             <tr>
+               <th>Number_of_positive_axillary_nodes_detected</th>
+               <td>3</td>
+               <td class="type type-number">number (default) </td>
+               <td></td>
+             </tr>
+             
+             <tr>
+               <th>Survival_status</th>
+               <td>4</td>
+               <td class="type type-number">number (default) </td>
+               <td></td>
+             </tr>
+             
+           </tbody>
+         </table>
+       
+      </div>
+      
+      
+      
+      <!-- Placeholder div elements for React components: preview tables -->
+      <div id="resource-2" class="react-me tables"
+           data-type="resource-preview" data-resource="2"></div>
+      <!-- End of div elements for React -->
+      
+      
+
+      <!-- Similar datasets -->
+      
+      <!-- End of Similar datasets -->
+
+
+      <!-- Search -->
+      <section class="similar-search hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/icon-search.png" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="col-sm-6">
+              <h3>Not found what you're looking for?</h3>
+              <p>You can search over a thousand datasets on datahub</p>
+            </div>
+            <div class="col-sm-5">
+                <!-- searchbox -->
+                <form class="search-form form form-inline" class="input-group col-xs-12" action="/search" method="GET">
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control input-lg" placeholder="Search ..." name="q" required />
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </div>
+      
+                </form>
+                <!-- search box ended -->
+            </div>
+        </div>
+      </section>
+      <!-- end of search -->
+
+    </div>
+  </div>
+</div>
+
+<!-- import into your tool section -->
+<div class="section-gray">
+  <div class="container">
+    <div class="inner_container">
+      <div class="dataset show">
+        <h2 class="section-title">Integrate this dataset into your favourite tool</h2>
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#data-cli">data-cli</a></li>
+          <li><a data-toggle="pill" href="#curl">cURL</a></li>
+          <li><a data-toggle="pill" href="#r">R</a></li>
+          <li><a data-toggle="pill" href="#pandas">Pandas</a></li>
+          <li><a data-toggle="pill" href="#python">Python</a></li>
+          <li><a data-toggle="pill" href="#javascript">JavaScript</a></li>
+        </ul>
+        <!-- content for instructions -->
+        <div class="tab-content">
+
+          <div id="data-cli" class="tab-pane fade in active">
+            <div class="part">
+              <p>
+  Use our <a href="/download">data-cli</a> tool designed for data wranglers:
+</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">data get </span><span class="hljs-string">https://datahub.io/machine-learning/haberman</span>
+<span class="hljs-keyword">data info </span><span class="hljs-string">machine-learning/haberman</span>
+<span class="hljs-keyword">tree </span><span class="hljs-string">machine-learning/haberman</span>
+</code></pre>
+            </div>
+          </div>
+
+          <div id="curl" class="tab-pane fade">
+            <div class="part">
+              <pre class="hljs"><code><span class="hljs-comment"># Get a list of dataset's resources</span>
+<span class="hljs-keyword">curl</span> -L -s <span class="hljs-string">https://datahub.io/machine-learning/haberman/datapackage.json</span> | <span class="hljs-keyword">grep</span> path
+
+<span class="hljs-comment"># Get resources</span>
+
+<span class="hljs-keyword">curl </span><span class="hljs-string">-L https://datahub.io/machine-learning/haberman/r/0.arff</span>
+
+<span class="hljs-keyword">curl </span><span class="hljs-string">-L https://datahub.io/machine-learning/haberman/r/1.csv</span>
+
+<span class="hljs-keyword">curl </span><span class="hljs-string">-L https://datahub.io/machine-learning/haberman/r/2.zip</span>
+
+</code></pre>
+            </div>
+          </div>
+
+          <div id="r" class="tab-pane fade">
+            <div class="part">
+              <p>If you are using R here's how to get the data you want quickly loaded:</p>
+<pre class="hljs"><code>install.packages(<span class="hljs-string">"jsonlite", repos="https://cran.rstudio.com/"</span>)
+<span class="hljs-keyword">library</span>(<span class="hljs-string">"jsonlite"</span>)
+
+json_file &lt;- <span class="hljs-string">'https://datahub.io/machine-learning/haberman/datapackage.json'</span>
+json_data &lt;- fromJSON(paste(readLines(json_file), collapse=<span class="hljs-string">""</span>))
+
+<span class="hljs-comment"># get list of all resources:</span>
+print(json_data$resources$name)
+
+<span class="hljs-comment"># print all tabular data(if exists any)</span>
+<span class="hljs-keyword">for</span>(i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:length(json_data$resources$datahub$type)){
+  <span class="hljs-keyword">if</span>(json_data$resources$datahub$type[i]==<span class="hljs-string">'derived/csv'</span>){
+    path_to_file = json_data$resources$path[i]
+    data &lt;- read.csv(url(path_to_file))
+    print(data)
+  }
+}
+</code></pre>
+<p><i><strong>Note:</strong> You might need to run the script with root permissions if you are running on Linux machine</i></p>
+            </div>
+          </div>
+
+          <div id="pandas" class="tab-pane fade">
+            <div class="part">
+              <p>Install the Frictionless Data data package library and the pandas itself:</p>
+<pre class="hljs"><code>pip install datapackage
+pip install pandas
+</code></pre>
+
+<p>Now you can use the datapackage in the Pandas:</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">import</span> datapackage
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+
+data_url = <span class="hljs-string">'https://datahub.io/machine-learning/haberman/datapackage.json'</span>
+
+<span class="hljs-comment"># to load Data Package into storage</span>
+package = datapackage.Package(data_url)
+
+<span class="hljs-comment"># to load only tabular data</span>
+resources = package.resources
+<span class="hljs-keyword">for</span> resource <span class="hljs-keyword">in</span> resources:
+    <span class="hljs-keyword">if</span> resource.tabular:
+        data = pd.read_csv(resource.descriptor[<span class="hljs-string">'path'</span>])
+        <span class="hljs-keyword">print</span> (data)
+</code></pre>
+            </div>
+          </div>
+
+          <div id="python" class="tab-pane fade">
+            <div class="part">
+              <p>For Python, first install the `datapackage` library (all the datasets on DataHub are Data Packages):</p>
+
+<pre class="hljs"><code>pip install datapackage
+</code></pre>
+
+<p>To get Data Package into your Python environment, run following code:</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">from</span> datapackage <span class="hljs-keyword">import</span> Package
+
+package = Package(<span class="hljs-string">'https://datahub.io/machine-learning/haberman/datapackage.json'</span>)
+
+<span class="hljs-comment"># print list of all resources:</span>
+<span class="hljs-keyword">print</span>(package.resource_names)
+
+<span class="hljs-comment"># print processed tabular data (if exists any)</span>
+<span class="hljs-keyword">for</span> resource <span class="hljs-keyword">in</span> package.resources:
+    <span class="hljs-keyword">if</span> resource.descriptor['datahub']['type'] == 'derived/csv':
+        <span class="hljs-keyword">print</span>(resource.read())
+</code></pre>
+            </div>
+          </div>
+
+          <div id="javascript" class="tab-pane fade">
+            <div class="part">
+              <p>If you are using JavaScript, please, follow instructions below:</p>
+<p>Install <code>data.js</code> module using <code>npm</code>:</p>
+<p>
+  <pre class="hljs">  <code>$ npm install data.js
+</code></pre>
+</p>
+<p>Once the package is installed, use the following code snippet:</p>
+<pre class="hljs"><code><span class="hljs-keyword">const</span> {Dataset} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'data.js'</span>)
+
+<span class="hljs-keyword">const</span> path = <span class="hljs-string">'https://datahub.io/machine-learning/haberman/datapackage.json'</span>
+
+<span class="hljs-comment">// We're using self-invoking function here as we want to use async-await syntax:</span>
+;<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> dataset = <span class="hljs-keyword">await</span> Dataset.load(path)
+  <span class="hljs-comment">// get list of all resources:</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> id <span class="hljs-keyword">in</span> dataset.resources) {
+    <span class="hljs-built_in">console</span>.log(dataset.resources[id]._descriptor.name)
+  }
+  <span class="hljs-comment">// get all tabular data(if exists any)</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> id <span class="hljs-keyword">in</span> dataset.resources) {
+    <span class="hljs-keyword">if</span> (dataset.resources[id]._descriptor.format === <span class="hljs-string">"csv"</span>) {
+      <span class="hljs-keyword">const</span> file = dataset.resources[id]
+      <span class="hljs-comment">// Get a raw stream</span>
+      <span class="hljs-keyword">const</span> stream = <span class="hljs-keyword">await</span> file.stream()
+      <span class="hljs-comment">// entire file as a buffer (be careful with large files!)</span>
+      <span class="hljs-keyword">const</span> buffer = <span class="hljs-keyword">await</span> file.buffer
+      <span class="hljs-comment">// print data</span>
+      stream.pipe(process.stdout)
+    }
+  }
+})()
+</code></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end of import into your tool section -->
+
+<!-- readme section -->
+
+<div class="container">
+  <div class="inner_container">
+    <div class="dataset show">
+      <h2 id="readme" class="section-title">Read me</h2>
+      <div class="readme part readable-width"><p>The resources for this dataset can be found at <a href="https://www.openml.org/d/43">https://www.openml.org/d/43</a></p>
+<p>Author:<br />
+Source: Unknown -<br />
+Please cite:</p>
+<ol>
+<li>
+<p>Title: Haberman’s Survival Data</p>
+</li>
+<li>
+<p>Sources:
+(a) Donor:   Tjen-Sien Lim (<a href="/cdn-cgi/l/email-protection#8ee2e7e3facefdfaeffaa0f9e7fdeda0ebeafb"><span class="__cf_email__" data-cfemail="0c606561784c7f786d78227b657f6f22696879">[email&#160;protected]</span></a>)
+(b) Date:    March 4, 1999</p>
+</li>
+<li>
+<p>Past Usage:</p>
+<ol>
+<li>Haberman, S. J. (1976). Generalized Residuals for Log-Linear
+Models, Proceedings of the 9th International Biometrics
+Conference, Boston, pp. 104-122.</li>
+<li>Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984),
+Graphical Models for Assessing Logistic Regression Models (with
+discussion), Journal of the American Statistical Association 79:
+61-83.</li>
+<li>Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis,
+Department of Statistics, University of Wisconsin, Madison, WI.</li>
+</ol>
+</li>
+<li>
+<p>Relevant Information:
+The dataset contains cases from a study that was conducted between
+1958 and 1970 at the University of Chicago’s Billings Hospital on
+the survival of patients who had undergone surgery for breast
+cancer.</p>
+</li>
+<li>
+<p>Number of Instances: 306</p>
+</li>
+<li>
+<p>Number of Attributes: 4 (including the class attribute)</p>
+</li>
+<li>
+<p>Attribute Information:</p>
+<ol>
+<li>Age of patient at time of operation (numerical)</li>
+<li>Patient’s year of operation (year - 1900, numerical)</li>
+<li>Number of positive axillary nodes detected (numerical)</li>
+<li>Survival status (class attribute)
+1 = the patient survived 5 years or longer
+2 = the patient died within 5 year</li>
+</ol>
+</li>
+<li>
+<p>Missing Attribute Values: None</p>
+</li>
+</ol>
+<p>Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last</p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- end of readme section -->
+
+
+<!-- Link to datapackage.json - putting here to be hidden for now -->
+<div class="container">
+  <div class="inner_container">
+    <a href="/machine-learning/haberman/datapackage.json" class="btn btn-default" style="margin-top:-80px">Datapackage.json</a>
+  </div>
+</div><!-- end of link to datapackage.json -->
+
+
+<div class="container premium_dataoffer">
+  <div class="inner_container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Request Customized Data</h3>
+            <br/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/data-offer-icon-1.png" class="img-responsive"/>
+                </div>
+                <p>Notifications of data updates and schema changes</p>
+            </div>
+            <p class="clearfix"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/data-offer-icon-2.png" class="img-responsive"/>
+                </div>
+                <p>Warranty / guaranteed updates</p>
+            </div>
+            <p class="clearfix"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/data-offer-icon-3.png" class="img-responsive"/>
+                </div>
+                <p>Workflow integration (e.g. Python packages, NPM packages)</p>
+            </div>
+            <p class="clearfix"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/data-offer-icon-4.png" class="img-responsive"/>
+                </div>
+                <p>Customized data (e.g. you need different or additional data)</p>
+            </div>
+            <p class="clearfix"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/data-offer-icon-5.png" class="img-responsive"/>
+                </div>
+                <p>Or suggest your own feature from the link below</p>
+            </div>
+            <p class="clearfix"></p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+          <a href="#premium-data-3" data-toggle="modal" data-target="#premium-data" class="btn btn-primary premium-data-link" onclick="dataLayer.push({'premium-data-link': 'separate-section'})">Try It Now</a> <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Footer Sections -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <img class="img-responsive" src="/static/img/datahub-cube-edited.svg" width=60>
+                    <br/>
+                    <p>At Datahub, we provide various solutions to Publish and Deploy your Data with power and simplicity. Datahub is the fastest way for individuals, teams and organizations to publish, deploy and share their data.</p>
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-md-offset-1">
+                    <label>Links</label>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/docs/terms-of-service">Terms of Service</a>
+                          </li>
+                        <li>
+                            <a href="/docs/privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.datahub.io/developers/api/">API</a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://old.datahub.io" target="_blank">Old DataHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <label>Support</label>
+                    <ul>
+                        <li>
+                            <a href="https://gitter.im/datahubio/chat">Chat</a>
+                        </li>
+                        <li>
+                            <a href="/docs/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2 col-md-offset-1">
+                    <label>Contact</label>
+                    <ul>
+                        <li>
+                            <a href="/cdn-cgi/l/email-protection#fc8f898c8c938e88bc989d889d94899ed29593"><span class="__cf_email__" data-cfemail="b6c5c3c6c6d9c4c2f6d2d7c2d7dec3d498dfd9">[email&#160;protected]</span></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">+44 xxx xxxx</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+            <div class="container pad-top-0">
+                <div class="row">
+                    <div class="col-sm-8 text-left col-md-4">
+                        <p>&copy; 2018 All Rights Reserved </p>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-md-offset-1 footer-logos">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <a href="https://datopian.com/" target="_blank">
+                            <img src="/static/img/datopian-logo.png" class="img-responsive" />
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="https://okfn.org/" target="_blank">
+                            <img src="/static/img/okfn-new-logo.png" class="img-responsive" />
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="https://www.sloan.org/" target="_blank">
+                            <img src="/static/img/sloan-foundation.png" class="img-responsive" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-sm-4 social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div> -->
+                </div>
+            </div>
+	</div>
+  <!-- end of footer -->
+
+
+
+  
+<!-- Function for reading query params -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function getURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+      var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == sParam) {
+          return sParameterName[1];
+      }
+    }
+  }
+</script>
+<!-- script for tabs to work as anchors (used for instructions in showcase page) -->
+<script>
+  jQuery("ul.nav-pills > li > a").on("shown.bs.tab", function (e) {
+     scrollposition = jQuery(document).scrollTop();
+     var id = jQuery(e.target).attr("href").substr(1);
+     window.location.hash = id;
+     jQuery(document).scrollTop(scrollposition);
+  });
+  var hash = window.location.hash;
+  jQuery('.nav.nav-pills a[href="' + hash + '"]').tab('show', function() {
+      jQuery(document).scrollTop();
+  });
+
+
+  //Slide out function for showcase
+  $(window).on('load', function() {
+    $("#showcase-offer").animate({
+      bottom:0
+    },1000);
+   });
+
+   function goToSearch() {
+    var query = document.getElementById('search-input').value;
+    window.location.href = '/search?q=' + query;
+  }
+</script>
+
+<!-- pass DP_ID to front-end -->
+<script type="text/javascript">
+  var DP_ID = JSON.parse('{"datahub":{"created":"1 year ago","findability":"published","flowid":"machine-learning/haberman/2","hash":"c2fa1c5c2ade0e6c7e236a2fc6397c71","modified":"1 year ago","owner":"machine-learning","ownerid":"machine-learning","stats":{"bytes":71943,"rowcount":306,"prettyBytes":"70kB"},"modifiedISO":"2018-09-06T12:59:00.494145","createdISO":"2018-08-22T02:12:24.311811"},"description":"The resources for this dataset can be found at https://www.openml.org/d/43\\n\\nAuthor:   \\nSource: Unkno","id":"machine-learning/haberman","licenses":[{"name":"ODC-PDDL","path":"http://opendatacommons.org/licenses/pddl/","title":"Open Data Commons Public Domain Dedication and License"}],"name":"haberman","readme":"The resources for this dataset can be found at https://www.openml.org/d/43\\n\\nAuthor:   \\nSource: Unknown -   \\nPlease cite:   \\n\\n1. Title: Haberman\'s Survival Data\\n \\n 2. Sources:\\n    (a) Donor:   Tjen-Sien Lim (limt@stat.wisc.edu)\\n    (b) Date:    March 4, 1999\\n \\n 3. Past Usage:\\n    1. Haberman, S. J. (1976). Generalized Residuals for Log-Linear\\n       Models, Proceedings of the 9th International Biometrics\\n       Conference, Boston, pp. 104-122.\\n    2. Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984),\\n       Graphical Models for Assessing Logistic Regression Models (with\\n       discussion), Journal of the American Statistical Association 79:\\n       61-83.\\n    3. Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis,\\n       Department of Statistics, University of Wisconsin, Madison, WI.\\n \\n 4. Relevant Information:\\n    The dataset contains cases from a study that was conducted between\\n    1958 and 1970 at the University of Chicago\'s Billings Hospital on\\n    the survival of patients who had undergone surgery for breast\\n    cancer.\\n \\n 5. Number of Instances: 306\\n \\n 6. Number of Attributes: 4 (including the class attribute)\\n \\n 7. Attribute Information:\\n    1. Age of patient at time of operation (numerical)\\n    2. Patient\'s year of operation (year - 1900, numerical)\\n    3. Number of positive axillary nodes detected (numerical)\\n    4. Survival status (class attribute)\\n          1 = the patient survived 5 years or longer\\n          2 = the patient died within 5 year\\n \\n 8. Missing Attribute Values: None\\n\\n Information about the dataset\\n CLASSTYPE: nominal\\n CLASSINDEX: last","resources":[{"bytes":4881,"datahub":{"type":"original"},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/fe063732e696d8e7aa79746032f0191b.arff","encoding":"ISO-8859-1","format":"arff","name":"haberman_arff","path":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_arff/archive/fe063732e696d8e7aa79746032f0191b/haberman_arff.arff","pathType":"local","profile":"data-resource","prettyBytes":"5kB"},{"bytes":3532,"datahub":{"derivedFrom":["haberman"],"type":"derived/csv"},"delimiter":",","dialect":{"delimiter":",","doubleQuote":true,"lineTerminator":"\\r\\n","quoteChar":"\\"","skipInitialSpace":false},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv","encoding":"utf-8","format":"csv","hash":"1213c083f5b851cf847b76132ca0cb03","mediatype":"text/csv","name":"haberman","path":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_csv/data/1213c083f5b851cf847b76132ca0cb03/haberman_csv.csv","pathType":"local","profile":"data-resource","quotechar":"\\"","rowcount":306,"schema":{"fields":[{"decimalChar":".","format":"default","groupChar":"","name":"Age_of_patient_at_time_of_operation","type":"number"},{"decimalChar":".","format":"default","groupChar":"","name":"Patients_year_of_operation","type":"number"},{"decimalChar":".","format":"default","groupChar":"","name":"Number_of_positive_axillary_nodes_detected","type":"number"},{"decimalChar":".","format":"default","groupChar":"","name":"Survival_status","type":"number"}],"missingValues":[""]},"signed":true,"title":"","description":"","alternates":[{"bytes":3225,"datahub":{"type":"source/tabular"},"delimiter":",","dialect":{"delimiter":",","quoteChar":"\\""},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv","encoding":"ISO-8859-1","format":"csv","mediatype":"text/csv","name":"haberman","path":"https://pkgstore.datahub.io/machine-learning/haberman/haberman/archive/1213c083f5b851cf847b76132ca0cb03/haberman.csv","pathType":"local","profile":"data-resource","quotechar":"\\"","schema":{"fields":[{"format":"default","name":"Age_of_patient_at_time_of_operation","type":"number"},{"format":"default","name":"Patients_year_of_operation","type":"number"},{"format":"default","name":"Number_of_positive_axillary_nodes_detected","type":"number"},{"format":"default","name":"Survival_status","type":"number"}],"missingValues":[""]},"signed":true,"prettyBytes":"3kB"},{"bytes":48086,"datahub":{"derivedFrom":["haberman"],"type":"derived/json"},"delimiter":",","dialect":{"delimiter":",","quoteChar":"\\""},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv","encoding":"utf-8","format":"json","hash":"065358e2e632e9eaa4b07d64153f2d01","mediatype":"text/csv","name":"haberman_json","path":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_json/data/065358e2e632e9eaa4b07d64153f2d01/haberman_json.json","pathType":"local","profile":"data-resource","quotechar":"\\"","rowcount":306,"schema":{"fields":[{"format":"default","name":"Age_of_patient_at_time_of_operation","type":"number"},{"format":"default","name":"Patients_year_of_operation","type":"number"},{"format":"default","name":"Number_of_positive_axillary_nodes_detected","type":"number"},{"format":"default","name":"Survival_status","type":"number"}],"missingValues":[""]},"signed":true,"prettyBytes":"47kB"}],"prettyBytes":"3kB","report":"{\\\\\\"time\\\\\\":1.043,\\\\\\"valid\\\\\\":false,\\\\\\"error-count\\\\\\":17,\\\\\\"table-count\\\\\\":1,\\\\\\"tables\\\\\\":[{\\\\\\"time\\\\\\":0.954,\\\\\\"valid\\\\\\":false,\\\\\\"error-count\\\\\\":17,\\\\\\"row-count\\\\\\":307,\\\\\\"source\\\\\\":\\\\\\"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv\\\\\\",\\\\\\"headers\\\\\\":[\\\\\\"Age_of_patient_at_time_of_operation\\\\\\",\\\\\\"Patients_year_of_operation\\\\\\",\\\\\\"Number_of_positive_axillary_nodes_detected\\\\\\",\\\\\\"Survival_status\\\\\\"],\\\\\\"scheme\\\\\\":\\\\\\"https\\\\\\",\\\\\\"format\\\\\\":\\\\\\"csv\\\\\\",\\\\\\"encoding\\\\\\":\\\\\\"iso8859-1\\\\\\",\\\\\\"schema\\\\\\":\\\\\\"table-schema\\\\\\",\\\\\\"errors\\\\\\":[{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 25 is duplicated to row(s) 21\\\\\\",\\\\\\"row-number\\\\\\":25,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"37\\\\\\",\\\\\\"63\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 29 is duplicated to row(s) 28\\\\\\",\\\\\\"row-number\\\\\\":29,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"38\\\\\\",\\\\\\"60\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 54 is duplicated to row(s) 53\\\\\\",\\\\\\"row-number\\\\\\":54,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"41\\\\\\",\\\\\\"65\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 67 is duplicated to row(s) 66\\\\\\",\\\\\\"row-number\\\\\\":67,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"43\\\\\\",\\\\\\"64\\\\\\",\\\\\\"0\\\\\\",\\\\\\"2\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 80 is duplicated to row(s) 78\\\\\\",\\\\\\"row-number\\\\\\":80,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"44\\\\\\",\\\\\\"61\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 110 is duplicated to row(s) 109\\\\\\",\\\\\\"row-number\\\\\\":110,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"48\\\\\\",\\\\\\"58\\\\\\",\\\\\\"11\\\\\\",\\\\\\"2\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 134 is duplicated to row(s) 130\\\\\\",\\\\\\"row-number\\\\\\":134,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"50\\\\\\",\\\\\\"61\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 181 is duplicated to row(s) 177\\\\\\",\\\\\\"row-number\\\\\\":181,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"54\\\\\\",\\\\\\"62\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 186 is duplicated to row(s) 184\\\\\\",\\\\\\"row-number\\\\\\":186,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"55\\\\\\",\\\\\\"58\\\\\\",\\\\\\"1\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 198 is duplicated to row(s) 194\\\\\\",\\\\\\"row-number\\\\\\":198,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"56\\\\\\",\\\\\\"60\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 208 is duplicated to row(s) 207\\\\\\",\\\\\\"row-number\\\\\\":208,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"57\\\\\\",\\\\\\"64\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 235 is duplicated to row(s) 234\\\\\\",\\\\\\"row-number\\\\\\":235,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"61\\\\\\",\\\\\\"59\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 239 is duplicated to row(s) 234, 235\\\\\\",\\\\\\"row-number\\\\\\":239,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"61\\\\\\",\\\\\\"59\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 245 is duplicated to row(s) 244\\\\\\",\\\\\\"row-number\\\\\\":245,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"62\\\\\\",\\\\\\"66\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 251 is duplicated to row(s) 250\\\\\\",\\\\\\"row-number\\\\\\":251,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"63\\\\\\",\\\\\\"63\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 268 is duplicated to row(s) 265\\\\\\",\\\\\\"row-number\\\\\\":268,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"65\\\\\\",\\\\\\"64\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]},{\\\\\\"code\\\\\\":\\\\\\"duplicate-row\\\\\\",\\\\\\"message\\\\\\":\\\\\\"Row 278 is duplicated to row(s) 277\\\\\\",\\\\\\"row-number\\\\\\":278,\\\\\\"column-number\\\\\\":null,\\\\\\"row\\\\\\":[\\\\\\"67\\\\\\",\\\\\\"66\\\\\\",\\\\\\"0\\\\\\",\\\\\\"1\\\\\\"]}]}],\\\\\\"warnings\\\\\\":[],\\\\\\"preset\\\\\\":\\\\\\"table\\\\\\",\\\\\\"resource\\\\\\":\\\\\\"haberman\\\\\\"}","reportObj":{"time":1.043,"valid":false,"error-count":17,"table-count":1,"tables":[{"time":0.954,"valid":false,"error-count":17,"row-count":307,"source":"https://s3.amazonaws.com/rawstore.datahub.io/1213c083f5b851cf847b76132ca0cb03.csv","headers":["Age_of_patient_at_time_of_operation","Patients_year_of_operation","Number_of_positive_axillary_nodes_detected","Survival_status"],"scheme":"https","format":"csv","encoding":"iso8859-1","schema":"table-schema","errors":[{"code":"duplicate-row","message":"Row 25 is duplicated to row(s) 21","row-number":25,"column-number":null,"row":["37","63","0","1"]},{"code":"duplicate-row","message":"Row 29 is duplicated to row(s) 28","row-number":29,"column-number":null,"row":["38","60","0","1"]},{"code":"duplicate-row","message":"Row 54 is duplicated to row(s) 53","row-number":54,"column-number":null,"row":["41","65","0","1"]},{"code":"duplicate-row","message":"Row 67 is duplicated to row(s) 66","row-number":67,"column-number":null,"row":["43","64","0","2"]},{"code":"duplicate-row","message":"Row 80 is duplicated to row(s) 78","row-number":80,"column-number":null,"row":["44","61","0","1"]},{"code":"duplicate-row","message":"Row 110 is duplicated to row(s) 109","row-number":110,"column-number":null,"row":["48","58","11","2"]},{"code":"duplicate-row","message":"Row 134 is duplicated to row(s) 130","row-number":134,"column-number":null,"row":["50","61","0","1"]},{"code":"duplicate-row","message":"Row 181 is duplicated to row(s) 177","row-number":181,"column-number":null,"row":["54","62","0","1"]},{"code":"duplicate-row","message":"Row 186 is duplicated to row(s) 184","row-number":186,"column-number":null,"row":["55","58","1","1"]},{"code":"duplicate-row","message":"Row 198 is duplicated to row(s) 194","row-number":198,"column-number":null,"row":["56","60","0","1"]},{"code":"duplicate-row","message":"Row 208 is duplicated to row(s) 207","row-number":208,"column-number":null,"row":["57","64","0","1"]},{"code":"duplicate-row","message":"Row 235 is duplicated to row(s) 234","row-number":235,"column-number":null,"row":["61","59","0","1"]},{"code":"duplicate-row","message":"Row 239 is duplicated to row(s) 234, 235","row-number":239,"column-number":null,"row":["61","59","0","1"]},{"code":"duplicate-row","message":"Row 245 is duplicated to row(s) 244","row-number":245,"column-number":null,"row":["62","66","0","1"]},{"code":"duplicate-row","message":"Row 251 is duplicated to row(s) 250","row-number":251,"column-number":null,"row":["63","63","0","1"]},{"code":"duplicate-row","message":"Row 268 is duplicated to row(s) 265","row-number":268,"column-number":null,"row":["65","64","0","1"]},{"code":"duplicate-row","message":"Row 278 is duplicated to row(s) 277","row-number":278,"column-number":null,"row":["67","66","0","1"]}]}],"warnings":[],"preset":"table","resource":"haberman"}},{"bytes":9126,"datahub":{"type":"derived/zip"},"description":"Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.","dpp:streamedFrom":"/tmp/549.haberman.zip","format":"zip","name":"haberman_zip","path":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_zip/data/bd93fa4fadc9dffca13c624312e6694b/haberman_zip.zip","profile":"data-resource","prettyBytes":"9kB"}],"title":"Haberman","views":[{"datahub":{"type":"preview"},"name":"datahub-preview-haberman_csv_preview","resources":["haberman"],"specType":"table","transform":{"limit":2000}}],"report":{"bytes":3093,"datahub":{"type":"derived/report"},"description":"Validation report for tabular data","dpp:streamedFrom":"validation_report.json","format":"json","hash":"489bf83c590c2d82a01b6563b3fca24a","name":"validation_report","path":"https://pkgstore.datahub.io/machine-learning/haberman/validation_report/data/489bf83c590c2d82a01b6563b3fca24a/validation_report.json","profile":"data-resource","valid":false},"path":"https://pkgstore.datahub.io/machine-learning/haberman/2","readmeSnippet":"The resources for this dataset can be found at https://www.openml.org/d/43\\n\\nAuthor:\\nSource: Unknown -\\nPlease cite:\\n\\nTitle: Haberman\'s Survival Data\\n\\n Sources:\\n    (a) Donor:   Tjen-Sien Lim (limt@stat.wisc.edu)\\n    (b) Date:    March 4, 1999\\n\\n Past Usage:\\n    Haberman, S. J. (1976). Generalized","readmeHtml":"<p>The resources for this dataset can be found at <a href=\\"https://www.openml.org/d/43\\">https://www.openml.org/d/43</a></p>\\n<p>Author:<br />\\nSource: Unknown -<br />\\nPlease cite:</p>\\n<ol>\\n<li>\\n<p>Title: Haberman’s Survival Data</p>\\n</li>\\n<li>\\n<p>Sources:\\n(a) Donor:   Tjen-Sien Lim (<a href=\\"mailto:limt@stat.wisc.edu\\">limt@stat.wisc.edu</a>)\\n(b) Date:    March 4, 1999</p>\\n</li>\\n<li>\\n<p>Past Usage:</p>\\n<ol>\\n<li>Haberman, S. J. (1976). Generalized Residuals for Log-Linear\\nModels, Proceedings of the 9th International Biometrics\\nConference, Boston, pp. 104-122.</li>\\n<li>Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984),\\nGraphical Models for Assessing Logistic Regression Models (with\\ndiscussion), Journal of the American Statistical Association 79:\\n61-83.</li>\\n<li>Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis,\\nDepartment of Statistics, University of Wisconsin, Madison, WI.</li>\\n</ol>\\n</li>\\n<li>\\n<p>Relevant Information:\\nThe dataset contains cases from a study that was conducted between\\n1958 and 1970 at the University of Chicago’s Billings Hospital on\\nthe survival of patients who had undergone surgery for breast\\ncancer.</p>\\n</li>\\n<li>\\n<p>Number of Instances: 306</p>\\n</li>\\n<li>\\n<p>Number of Attributes: 4 (including the class attribute)</p>\\n</li>\\n<li>\\n<p>Attribute Information:</p>\\n<ol>\\n<li>Age of patient at time of operation (numerical)</li>\\n<li>Patient’s year of operation (year - 1900, numerical)</li>\\n<li>Number of positive axillary nodes detected (numerical)</li>\\n<li>Survival status (class attribute)\\n1 = the patient survived 5 years or longer\\n2 = the patient died within 5 year</li>\\n</ol>\\n</li>\\n<li>\\n<p>Missing Attribute Values: None</p>\\n</li>\\n</ol>\\n<p>Information about the dataset\\nCLASSTYPE: nominal\\nCLASSINDEX: last</p>\\n","formats":["arff","csv","zip"],"downloads":[{"name":"haberman_arff","format":"arff","prettyBytes":"5kB","download":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_arff/archive/fe063732e696d8e7aa79746032f0191b/haberman_arff.arff","otherFormats":[]},{"name":"haberman","format":"csv","title":"","description":"","prettyBytes":"3kB","download":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_csv/data/1213c083f5b851cf847b76132ca0cb03/haberman_csv.csv","otherFormats":[{"name":"haberman_json","format":"json","prettyBytes":"47kB","download":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_json/data/065358e2e632e9eaa4b07d64153f2d01/haberman_json.json"}]},{"name":"haberman_zip","format":"zip","description":"Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.","prettyBytes":"9kB","download":"https://pkgstore.datahub.io/machine-learning/haberman/haberman_zip/data/bd93fa4fadc9dffca13c624312e6694b/haberman_zip.zip","otherFormats":[]}]}');
+</script>
+
+
+  <link rel="stylesheet" media="screen" href="/static/dpr-js/dist/main.css">
+  <script type="text/javascript" src="/static/dpr-js/dist/bundle.js"></script>
+
+
+
+
+	
+	<script src="/static/js/emojify.js"></script>
+    <script type="text/javascript" src="/static/js/smoothscroll.min.js"></script>
+	
+    <script>
+      // Emojify text:
+      emojify.setConfig({
+        only_crawl_id    : null,            // Use to restrict where emojify.js applies
+        img_dir          : '/static/img/emoji',  // Directory for emoji images
+        ignored_tags     : {                // Ignore the following tags
+            'SCRIPT'  : 1,
+            'TEXTAREA': 1,
+            'PRE'     : 1,
+            'CODE'    : 1
+        }
+      });
+      emojify.run();
+
+      function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+
+      // Set the userid for Google Tags Manager:
+      dataLayer.push({'userId': getCookie('id')});
+
+      function scrollDown(el) {
+        document.querySelector(el.attributes.href.value).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+      // Popover on avatar icon in navbar and certified
+      jQuery(document).ready(function(){
+        jQuery('[data-toggle="popover"]').popover({
+          'placement': 'bottom',
+          'trigger': 'focus',
+          'html': true
+        });
+
+        $('.certified-tick').attr('data-original-title','<b>Datahub Certified</b> <ul><li>&#x25CF; Quality assured data </li><li>&#x25CF; Sources audited </li><li>&#x25CF; Premium data available for bespoke formatting, additional data and guaranteed updates with SLA</li></ul>');
+        $('[data-toggle="tooltip"]').tooltip({html:true}); 
+        
+      });
+      // Set avatar in navbar using id in cookies
+      var src = `https://www.gravatar.com/avatar/${getCookie('id')}?d=https%3A%2F%2Ftesting.datahub.io%2Fstatic%2Fimg%2Flogo-cube03.png`;
+      var avatar = document.getElementById('avatar');
+      if (avatar) {
+        avatar.src = src;
+      }
+    </script>
+
+
+
+  </body>
+
+</html>

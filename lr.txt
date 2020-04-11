@@ -1,0 +1,58 @@
+#import the dataset letter-recognition.data 
+
+head(letter.recognition) 
+
+#using the function lfda() to reduce the dimension from 16 to 15
+library(lfda)
+x<-letter.recognition[,-1]
+y<-letter.recognition[,1]
+r<-15
+model<-lfda(x,y,r,metric = "plain")
+newdata<-model$Z
+newdata
+newdata1<-data.frame(V1=y ,
+                     V2=newdata[,1],
+                     V3=newdata[,2],
+                     V4=newdata[,3],
+                     V5=newdata[,4],
+                     V6=newdata[,5],
+                     V7=newdata[,6] ,
+                     V8=newdata[,7],
+                     V9=newdata[,8],
+                     V10=newdata[,9],
+                     V11=newdata[,10],
+                     V12=newdata[,11],
+                     V13=newdata[,12],
+                     V14=newdata[,13] ,
+                     V15=newdata[,14],
+                     V16=newdata[,15]
+                     )
+newdata1
+
+#plot(x=model,labels=y)
+
+#splitting data into training and test sets 
+library(caret)
+set.seed(1234)
+train_index<-createDataPartition(newdata1$V1,p=0.75,list=FALSE)
+train<-newdata1[train_index,]
+test<-newdata1[-train_index,]
+
+summary(test)
+summary(train)
+
+#performimg linear discriminant analysis using the function lda() to classify into different classes
+library(MASS)
+lr.lda<-lda(V1 ~.,data=train)
+lr.lda
+
+#prediction of test data oputput
+lr.predict<- predict(lr.lda,test,type="class")
+#plot(test,lr.predict)
+lr.predict
+
+#finding the accuracy of the original output with the test output
+table(lr.predict$class,test$V1)
+confusionMatrix(table(lr.predict$class,test$V1))
+
+#the accuracy of the model is 70.2%
